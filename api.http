@@ -1,0 +1,46 @@
+@host = http://localhost:5000
+
+# Get all groups
+GET {{host}}/groups
+
+### 
+
+# Get single group
+GET {{host}}/groups/5
+
+### 
+
+# Create group
+POST {{host}}/groups
+Content-Type: application/json
+
+{
+  "name": "notion",
+  "pepito": "name"
+}
+
+###
+
+# Update
+PUT {{host}}/groups/5
+Content-Type: application/json
+
+{
+  "name": "Notion",
+  "description": "Logitech group description"
+}
+
+
+###
+
+PATCH {{host}}/groups/4
+Content-Type: application/json
+
+{
+  "name": "Logitech Other 2"
+}
+
+###
+
+# Delete group
+DELETE {{host}}/groups/2
