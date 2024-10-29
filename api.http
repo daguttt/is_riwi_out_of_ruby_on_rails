@@ -44,3 +44,12 @@ Content-Type: application/json
 
 # Delete group
 DELETE {{host}}/groups/2
+
+###
+
+POST {{host}}/requests
+Content-Type: application/json
+
+{
+  "body": "coffe"
+}
