@@ -83,4 +83,4 @@ production:
   <<: *default
   database: is_riwi_out_of_production
   username: is_riwi_out_of
-  password: <%= ENV["IS_RIWI_OUT_OF_DATABASE_PASSWORD"] %>
+  password: <%= ENV.fetch("DB_PASSWORD") %>
