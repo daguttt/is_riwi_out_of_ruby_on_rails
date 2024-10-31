@@ -7,7 +7,6 @@ class GroupsController < ApplicationController
   # GET /groups
   def index
     @groups = Group.all
-    Group.fin
     render json: @groups
   end
 

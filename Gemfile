@@ -30,7 +30,7 @@ gem "bootsnap", require: false
 # gem "rack-cors"
 
 # Environment variables
-gem "dotenv-rails", groups: [ :development, :test ]
+gem "dotenv-rails"
 
 gem "erb_lint", require: false
 
