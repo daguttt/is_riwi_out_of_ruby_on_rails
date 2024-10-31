@@ -1,4 +1,4 @@
-@host = http://localhost:5000
+@host = http://localhost:5500
 
 # Get all groups
 GET {{host}}/groups
@@ -6,7 +6,7 @@ GET {{host}}/groups
 ### 
 
 # Get single group
-GET {{host}}/groups/5
+GET {{host}}/groups/1
 
 ### 
 
@@ -15,35 +15,33 @@ POST {{host}}/groups
 Content-Type: application/json
 
 {
-  "name": "notion",
-  "pepito": "name"
+  "name": "Bancolombia"
 }
 
 ###
 
 # Update
-PUT {{host}}/groups/5
+PUT {{host}}/groups/1
 Content-Type: application/json
 
 {
-  "name": "Notion",
-  "description": "Logitech group description"
+  "description": "Bancolombia description"
 }
 
 
 ###
 
-PATCH {{host}}/groups/4
+PATCH {{host}}/groups/1
 Content-Type: application/json
 
 {
-  "name": "Logitech Other 2"
+  "name": "Another Bancolombia description"
 }
 
 ###
 
 # Delete group
-DELETE {{host}}/groups/2
+DELETE {{host}}/groups/1
 
 ###
 
@@ -51,5 +49,5 @@ POST {{host}}/requests
 Content-Type: application/json
 
 {
-  "body": "pepito"
+  "body": "COFFEE"
 }
