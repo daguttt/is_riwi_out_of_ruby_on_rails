@@ -1,12 +1,11 @@
 class RequestsController < ApplicationController
   def create
-    # render json: { message: "Request created" }
     @request = Request.new(request_params)
 
     is_request_saved = @request.save
 
     if !is_request_saved
-      return render json: @request.errors, status: :unprocessable_entity
+      return render problem: { errors: @request.errors }, status: :unprocessable_entity
     end
 
     # Notify with a email

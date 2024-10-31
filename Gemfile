@@ -34,6 +34,9 @@ gem "dotenv-rails"
 
 gem "erb_lint", require: false
 
+# API Error Handling with RFC7807 Problem Detailsfor HTTP APIs (https://tools.ietf.org/html/rfc7807)
+gem "problem_details-rails"
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
