@@ -1,5 +1,5 @@
 class RequestModelBodyAttributeValidator < ActiveModel::Validator
-  ALLOWED_VALUES = [ "WATER", "COFFEE", "TOILET PAPER", "SOAP" ]
+  ALLOWED_VALUES = [ "WATER", "COFFEE", "TOILET_PAPER", "SOAP" ]
 
   def validate(record)
     unless ALLOWED_VALUES.include?(record.body)
