@@ -9,7 +9,7 @@ class RequestsController < ApplicationController
     end
 
     # Notify with a email
-    RequestMailer.notify_request(@request.body).deliver_now
+    RequestMailer.notify_request(@request.body).deliver_later
 
     render json: @request, status: :created
   end
