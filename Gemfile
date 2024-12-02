@@ -37,7 +37,7 @@ gem "erb_lint", require: false
 # API Error Handling with RFC7807 Problem Detailsfor HTTP APIs (https://tools.ietf.org/html/rfc7807)
 gem "problem_details-rails"
 
-gem "active_model_serializers", "~> 0.10.14"
+gem "active_model_serializers", "~> 0.10.15"
 
 
 group :development, :test do
